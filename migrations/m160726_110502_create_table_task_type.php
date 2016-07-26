@@ -1,14 +1,15 @@
 <?php
 
 use yii\db\Migration;
+use yii\db\Schema;
 
 class m160726_110502_create_table_task_type extends Migration
 {
     public function up()
     {
         $this->createTable('task_type', [
-           'id' => \yii\db\Schema::TYPE_PK,
-            'description' => \yii\db\Schema::TYPE_STRING
+           'id' => Schema::TYPE_PK,
+            'description' => Schema::TYPE_STRING
         ]);
     }
 
